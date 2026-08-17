@@ -1,40 +1,75 @@
-# Abdul Ahad — 3D React Portfolio
+# Abdul Ahad — Vite React 3D Portfolio
 
-A responsive JavaScript developer portfolio built with React, Vite, Three.js and React Three Fiber.
+A responsive JavaScript-stack developer portfolio built with **Vite + React + Three.js + React Three Fiber**.
+
+## Stack
+
+- Vite 8
+- React 19
+- Three.js
+- @react-three/fiber
+- @react-three/drei
+- Plain responsive CSS
 
 ## Features
 
-- Interactive procedural Three.js hero (no external 3D model file required)
-- Responsive mobile navigation
+- Interactive procedural 3D hero scene
+- No external `.glb` model dependency
+- Futuristic developer-lab visual style
+- Responsive desktop, tablet and mobile layout
+- Mobile navigation
 - Scroll reveal transitions
-- Skills / stack section
-- Portfolio concept cards
+- JavaScript-stack skills section
+- Project showcase cards
 - Services section
-- Direct WhatsApp and phone CTAs for +92 328 1935889
+- WhatsApp and click-to-call actions for +92 328 1935889
 - Reduced-motion accessibility support
-- Minimal runtime dependencies
+- Content separated into reusable data/components
 
-## Run locally
+## Start locally
 
-Requires a current Node.js release supported by Vite 8.
+Use a Node.js version supported by Vite 8, then run:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Production build:
+Open the local URL printed by Vite (normally `http://localhost:5173`).
+
+## Production
 
 ```bash
 npm run build
 npm run preview
 ```
 
+The production files will be generated in `dist/`.
+
+## Project structure
+
+```text
+abdul-ahad-portfolio/
+├── index.html
+├── package.json
+├── vite.config.js
+├── .gitignore
+└── src/
+    ├── App.jsx
+    ├── main.jsx
+    ├── styles.css
+    ├── components/
+    │   ├── Icons.jsx
+    │   └── Scene.jsx
+    └── data/
+        └── portfolio.js
+```
+
 ## Customize
 
-- Portfolio content: `src/data/portfolio.js`
-- Phone number: constants at the top of `src/App.jsx`
-- Colors/design tokens: `:root` in `src/styles.css`
-- 3D scene: `src/components/Scene.jsx`
+- Personal/project content: `src/data/portfolio.js`
+- Phone/WhatsApp details: `src/App.jsx`
+- Colors/design tokens: `src/styles.css`
+- 3D scene and animations: `src/components/Scene.jsx`
 
-The included project cards are explicitly marked as concept builds so they do not make unverified client claims. Replace them with Abdul Ahad's real projects when available.
+Portfolio project cards are marked as concepts until Abdul Ahad's actual projects and links are supplied.
